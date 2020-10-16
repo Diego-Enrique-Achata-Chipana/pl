@@ -14,4 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::post('empleados','EmpleadoController@index');
+Route::get('empleados','EmpleadoController@index');
+Route::post('empleados','EmpleadoController@store');
+Route::put('empleados','EmpleadoController@update');
