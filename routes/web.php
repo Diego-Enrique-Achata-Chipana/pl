@@ -16,4 +16,4 @@ Route::get('/', function () {
 });
 Route::get('empleados','EmpleadoController@index');
 Route::post('empleados','EmpleadoController@store');
-Route::put('empleados','EmpleadoController@update');
+Route::patch('empleados','EmpleadoController@update');
