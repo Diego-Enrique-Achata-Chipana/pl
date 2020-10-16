@@ -15,5 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('empleados','EmpleadoController@index');
-Route::post('empleados','EmpleadoController@store');
-Route::put('empleados','EmpleadoController@update');
+Route::post('empleadoss','EmpleadoController@store');
+Route::put('empleadoss','EmpleadoController@update');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
