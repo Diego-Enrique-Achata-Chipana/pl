@@ -14,4 +14,4 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('empleados','EmpleadoController@index');
+Route::post('empleados','EmpleadoController@index');
