@@ -23,9 +23,17 @@ class EmpleadoController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $empleado = new Empleado;
+        $empleado->nombre = $request->get('nombre');
+        $empleado->apellido = $request->get('apellido');
+        $empleado->fecha_nacimiento = $request->get('fecha_nacimiento');
+        $empleado->dni = $request->get('dni');
+        $empleado->sexo = $request->get('sexo');
+        $empleado->celular = $request->get('celular');
+        $empleado->email = $request->get('email');
+        $empleado->save();
     }
 
     /**
