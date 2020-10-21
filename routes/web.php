@@ -15,15 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('empleados','EmpleadoController@index');
-<<<<<<< HEAD
 Route::post('empleados','EmpleadoController@store');
 Route::put('empleados','EmpleadoController@update');
 Route::delete('empleados','EmpleadoController@delete');
 
-=======
-Route::post('empleadoss','EmpleadoController@store');
-Route::put('empleadoss','EmpleadoController@update');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
->>>>>>> rp1
